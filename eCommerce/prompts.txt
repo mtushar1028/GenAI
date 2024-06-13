@@ -1,0 +1,30 @@
+You need to build an ecommerce application. 
+The application needs to have following core functionalities:
+1) Registration module
+2) Login throught username and password with authentication using OTP
+3) Change password
+4) Forgot password
+5) Product catlog with amount, images, description
+6) Add to cart
+7) Checkout and payment module
+
+Write a code with high quality by following best coding practices and should not have security issues.
+Write unit test cases for each module.
+
+Use HTML, CSS and JavaScript for coding.
+
+__________________________
+
+On the Home page only show Registration, login, Forgot password functionality and logo of website and message "welcome shoppers" message.
+Ask new user to get registered. Let registered user login. Once user is logged in redirect the user to product page. 
+
+Display all the products on products page. Create a navbar and display Home button. Also have Change password option displayed on product page navbar. Also when user clicks on Checkout button take the user to the payment page.
+Create footer display company name, address, contact number, email, copyright and social media icons with their links. 
+
+Display the total amount to be paid on payment page. Give the different payment options to the user like credit card, debit card, UPI, net banking etc. Also display make payment button. When user clicks on make payment button show him payment successful message. Then show him order placed message.
+
+__________________________
+
+
+On home page display "welcome shoppers" message at center. In the regidter form add the email and mobile number fields. Display the logo at top left with some margin added. Divide the page. Show register on left side and login and forgot password on right side. 
+Create hyperlink for forgot password.

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="home">
+        <h1>Welcome Shoppers</h1>
+        <img src="images/logo.png" alt="Website Logo" width="100">
+        
+        <!-- Registration Form -->
+        <div id="registration-form">
+            <h2>Register</h2>
+            <input type="text" id="reg-username" placeholder="Username">
+            <input type="password" id="reg-password" placeholder="Password">
+            <button onclick="register()">Register</button>
+        </div>
+
+        <!-- Login Form -->
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+        </div>
+
+        <!-- Forgot Password Form -->
+        <div id="forgot-password-form">
+            <h2>Forgot Password</h2>
+            <input type="text" id="forgot-username" placeholder="Username">
+            <button onclick="forgotPassword()">Submit</button>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div id="products-page">
+        <!-- Navbar -->
+        <nav>
+            <a href="index.html">Home</a>
+            <button onclick="changePassword()">Change Password</button>
+        </nav>
+
+        <h2>Products</h2>
+        <div id="products"></div>
+        <div id="cart">
+            <h2>Cart</h2>
+            <div id="cart-items"></div>
+            <button onclick="redirectToPayment()">Checkout</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>Company Name: XYZ E-commerce</p>
+            <p>Address: 1234 Market St, San Francisco, CA 94103</p>
+            <p>Contact: +1 (123) 456-7890</p>
+            <p>Email: contact@xyzcommerce.com</p>
+            <p>&copy; 2024 XYZ E-commerce. All rights reserved.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/product.js"></script>
+</body>
+</html>
