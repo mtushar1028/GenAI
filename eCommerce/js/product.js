@@ -3,7 +3,6 @@ const products = [
     { id: 2, name: "Product 2", description: "Description for Product 2", price: 20.00, image: "images/product2.jpg" },
     { id: 3, name: "Product 3", description: "Description for Product 3", price: 30.00, image: "images/product3.jpg" },
     { id: 4, name: "Product 4", description: "Description for Product 4", price: 40.00, image: "images/product4.jpg" },
-
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
