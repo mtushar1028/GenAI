@@ -3,38 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-commerce App</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>E-commerce Home</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div id="home">
+    <header>
+        <img src="images/Company_logo.png" alt="Company Logo" class="logo">
         <h1>Welcome Shoppers</h1>
-        <img src="images/logo.png" alt="Website Logo" width="100">
-        
-        <!-- Registration Form -->
-        <div id="registration-form">
-            <h2>Register</h2>
-            <input type="text" id="reg-username" placeholder="Username">
-            <input type="password" id="reg-password" placeholder="Password">
-            <button onclick="register()">Register</button>
+    </header>
+        <div class="width-100">
+            <div class="tab-container">
+                <div class="tab">
+                    <button class="tablinks " onclick="openTab(event, 'Login')">Login</button>
+                    <button class="tablinks" onclick="openTab(event, 'Register')">Register</button>
+                </div>
+                <div id="Login" class="tabcontent active">
+                    <div class="box">
+                        <h2>Login</h2>
+                        <form id="login-form" >
+                            <input type="text" id="login-username" placeholder="Username" required><br>
+                            <input type="password" id="login-password" placeholder="Password" required><br>
+                            <button type="submit">Login</button>
+                        </form>
+                        <a href="#" onclick="showForgotPassword();">Forgot Password?</a>
+                    </div>
+                    <div class="box" id="forgot-password-form" style="display: none;">
+                        <h2>Forgot Password</h2>
+                        <input type="text" id="forgot-username" placeholder="Username" required><br>
+                        <button onclick="forgotPassword();">Retrieve Password</button>
+                        <a href="#" onclick="document.getElementById('forgot-password-form').style.display='none'; document.getElementById('login-form').style.display='block';">Back to Login</a>
+                    </div>
+                </div>
+                <div id="Register" class="tabcontent" style="display: none;">
+                    <div class="box">
+                        <h2>Register</h2>
+                        <!-- <form id="register-form" onsubmit="register(); return false;"> -->
+                            <input type="text" value="dsf" id="username" placeholder="Username" required><br>
+                            <input type="password" value="dsf" id="password" placeholder="Password" required><br>
+                            <input type="email" value="dsf@fg.gf" id="email" placeholder="Email" required><br>
+                            <input type="tel" value="dsf" id="mobile" placeholder="Mobile" required><br>
+                            <button type="button" id="registerButton">Register</button>
+                        <!-- </form> -->
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Login Form -->
-        <div id="login-form">
-            <h2>Login</h2>
-            <input type="text" id="login-username" placeholder="Username">
-            <input type="password" id="login-password" placeholder="Password">
-            <button onclick="login()">Login</button>
-        </div>
-
-        <!-- Forgot Password Form -->
-        <div id="forgot-password-form">
-            <h2>Forgot Password</h2>
-            <input type="text" id="forgot-username" placeholder="Username">
-            <button onclick="forgotPassword()">Submit</button>
-        </div>
-    </div>
-
+    <!-- <script src="js/products.js"></script> -->
+    <script src="js/tabs.js"></script>
     <script src="js/auth.js"></script>
 </body>
 </html>

@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <img src="${product.image}" alt="${product.name}">
             <h3>${product.name}</h3>
             <p>${product.description}</p>
-            <p class="price">$${product.price.toFixed(2)}</p>
+            <p class="price">₹${product.price.toFixed(2)}</p>
             <button onclick="addToCart(${product.id})">Add to Cart</button>
         `;
         productGrid.appendChild(productCard);

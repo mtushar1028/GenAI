@@ -148,10 +148,6 @@ a:hover {
   cursor: pointer;
 }
 
-.product-card button:hover {
-  background-color: #4cae4c;
-}
-
 footer {
   width: 100%;
   padding: 20px;
@@ -213,4 +209,170 @@ nav ul li
 .company-text
 {
   line-height: 15px;
+}
+.logo {
+  width: 100px; /* Standard logo size */
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  flex: 1;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fff3e0; /* Light orange background */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #ffcc80; /* Darker shade of light orange */
+}
+
+.logo {
+  width: 100px; /* Standard logo size */
+  height: auto;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0;
+  flex: 1;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 1;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.tab-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 500px;
+  margin: 0 auto;
+}
+
+.tab {
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.tab button:hover {
+  background-color: #ddd;
+}
+
+.tab button.active {
+  background-color: #ccc;
+}
+
+.tabcontent {
+  display: none;
+  padding: 20px 0;
+}
+
+.tabcontent .box {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form input {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #5cb85c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4cae4c;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.product-card button:hover {
+  background-color: #4cae4c;
+}
+.social-media a {
+  margin-right: 10px;
+}
+#Login
+{
+  display: block;
+}
+.width-100
+{
+  width: 100%;
+}
+.cart-section
+{
+  height: auto;
+  background-color: #dfd3d3;
+  padding: 20px;
+  width: 100%;
+}
+#cart-items
+{
+  list-style-type: none;
 }
