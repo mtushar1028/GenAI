@@ -5,6 +5,7 @@ function addToCart(productId) {
     if (product) {
         cart.push(product);
         alert('Product added to cart');
+      
         displayCart();
     }
 }
@@ -16,14 +17,21 @@ function displayCart() {
     let totalAmount = 0;
     cart.forEach((product, index) => {
         totalAmount += product.price;
+        totalCartItems=index+1;
         cartItemsDiv.innerHTML += `
-            <div>
+            <li>
                 <span>${product.name} - $${product.price}</span>
-                <button onclick="removeFromCart(${index})">Remove</button>
-            </div>
+                <button style="margin:5px;" onclick="removeFromCart(${index})">Remove</button>
+            </li>
         `;
     });
 
+    const cartItemsCountDiv = document.getElementById('cart-product-items');
+    cartItemsCountDiv.innerHTML = totalCartItems;
+    if(totalCartItems>0){
+        
+    }
+    
     localStorage.setItem('totalAmount', totalAmount);
 }
 
@@ -39,3 +47,7 @@ function redirectToPayment() {
         alert('Cart is empty');
     }
 }
+// function savelist()
+// {
+
+// }

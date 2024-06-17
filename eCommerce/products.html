@@ -14,13 +14,18 @@
             <ul>
                 <li><a class="font-15" href="index.html">Home</a></li>
                 <li><a class="font-15" href="#" onclick="showChangePassword()">Change Password</a></li>
-                <li class="btn-checkout"><a class="font-15" href="payment.html">Checkout</a></li>
+                <li class="btn-checkout"><a class="font-15" href="payment.html">Checkout &nbsp;&nbsp;<span style="color: red;" id='cart-product-items'></span></a></li>
             </ul>
             
         </nav>
     </header>
         <div>
             <h3>Products</h3>
+        </div>
+        <div  class="cart-section">
+            <ul id="cart-items">
+
+            </ul>
         </div>
         <div id="products" class="product-grid">
             <div class="" id="product-list">
@@ -34,7 +39,7 @@
             <div class="footer-column">
                 <img class="company-logo" src="images/company_logo.png" />
                 <p>Shopping</p>
-                <p class="company-text">123 Street,pune, maharashtra, india</p>
+                <p class="company-text">123 Street, Pune, Maharashtra, India</p>
                 <p class="company-text">Contact Number: +123456789</p>
                 <p class="company-text">Email: info@company.com</p>
             </div>
@@ -47,9 +52,9 @@
             <div class="footer-column">
                 <p>Connect with on social media</p>
                 <div class="social-media">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">Instagram</a>
+                    <a href="https://facebook.com">Facebook</a>
+                    <a href="https://twitter.com">Twitter</a>
+                    <a href="https://instagram.com">Instagram</a>
                 </div>
             </div>
             
@@ -57,5 +62,6 @@
         <p style="padding: 10px;">&copy; 2024 Company Name. All rights reserved.</p>
     </footer>
     <script src="js/product.js"></script>
+    <script src="js/cart.js"></script>
 </body>
 </html>
