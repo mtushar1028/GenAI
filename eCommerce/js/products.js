@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         productCard.className = 'product-card';
         productCard.innerHTML = `
             <img src="${product.image}" alt="${product.name}">
-            <h3>${product.name}</h3>
+            <h4>${product.name}</h4>
             <p>${product.description}</p>
             <div class="price">₹${product.price}</div>
-            <button onclick="addToCart(${product.id})">Add to Cart</button>
+            <button id="addtocart${product.id}" onclick="addToCart(${product.id})">Add to Cart</button>
         `;
         productsContainer.appendChild(productCard);
     });

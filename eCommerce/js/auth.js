@@ -1,26 +1,8 @@
 const users = [];
 
-// function register() {
-//     const username = document.getElementById('reg-username').value;
-//     const password = document.getElementById('reg-password').value;
-
-//     if (username && password) {
-//         const user = {
-//             username: username,
-//             password: password,
-//             otp: null
-//         };
-//         users.push(user);
-//         alert('Registration successful');
-//         window.location.href = 'products.html';
-//     } else {
-//         alert('Please fill out all fields');
-//     }
-// }
-
-
 document.getElementById('login-form').addEventListener('submit', function(event) {
   event.preventDefault();
+  
   console.log('inside login call:');
   const username = document.getElementById('login-username').value;
   const password = document.getElementById('login-password').value;
@@ -53,6 +35,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
                 } else {
                     alert('Invalid OTP');
                 }
+                localStorage.setItem('currentUser', username);
 
           console.log('Success:', data);
           // alert('Login successful!');
@@ -63,28 +46,6 @@ document.getElementById('login-form').addEventListener('submit', function(event)
       console.error('Error:', error);
   });
 });
-
-// function login() {
-//     const username = document.getElementById('login-username').value;
-//     const password = document.getElementById('login-password').value;
-
-//     const user = users.find(u => u.username === username && u.password === password);
-
-//     if (user) {
-//         // Send OTP
-//         user.otp = Math.floor(100000 + Math.random() * 900000); // Generate 6 digit OTP
-//         alert('OTP: ' + user.otp);
-//         const otp = prompt('Enter OTP:');
-//         if (otp == user.otp) {
-//             alert('Login successful');
-//             window.location.href = 'products.html';
-//         } else {
-//             alert('Invalid OTP');
-//         }
-//     } else {
-//         alert('Invalid username or password');
-//     }
-// }
 
 function forgotPassword() {
     const username = document.getElementById('forgot-username').value;

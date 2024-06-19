@@ -19,11 +19,15 @@
     </header>
     <main>
         <h2 class="text-center">Checkout</h2>
+        <hr>
         <div id="checkout">
-            <h5>Product: <span id="product-detail">Product 1</span></h5>
-            <h5>Total Amount: ₹<span id="total-amount">0.00</span></h5>
-            <h4>Payment Options</h4>
-            <form id="payment-form">
+            <div id="cartItems">
+
+            </div>
+            <hr>
+            <h3>Total Amount: ₹<span id="total-amount"></span></h3>
+            <h4 class="tab-container" style="background-color: rgb(220, 255, 255);">Payment Options</h4>
+            <form id="payment-form" class="tab-container">
                 <label class="payment-method">
                     <input type="radio" name="payment-method" value="credit-card" required>
                     Credit Card
@@ -40,12 +44,11 @@
                     <input type="radio" name="payment-method" value="net-banking" required>
                     Net Banking
                 </label>
-               <div class="payment text-center">
-                <button type="submit">Make Payment</button>
-               </div>
+                <div class="payment text-center">
+                    <button type="submit">Make Payment</button>
+                </div>
             </form>
         </div>
-       
     </main>
     <footer>
         <hr>
